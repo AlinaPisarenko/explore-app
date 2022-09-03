@@ -84,3 +84,6 @@ Realtor.create(
   email: "r.anderson@gmail.com",
   image: "images/realtor_6.jpeg"
 )
+
+
+puts "Done Seeding 🌱🌸"
