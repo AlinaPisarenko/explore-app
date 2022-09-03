@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Realtors({ realtors }) {
-  if (!realtors) return <h1>loading</h1>;
   const first3 = realtors.slice(0, 3);
 
   let eachRealtor = first3.map((realtor) => {
