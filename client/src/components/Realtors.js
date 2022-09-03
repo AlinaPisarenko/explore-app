@@ -1,14 +1,12 @@
 import React from 'react';
 
 export default function Realtors({ realtors }) {
-  console.log(realtors);
-
   if (!realtors) return <h1>loading</h1>;
   const first3 = realtors.slice(0, 3);
 
   let eachRealtor = first3.map((realtor) => {
     return (
-      <div className='realtors__list'>
+      <div className='realtors__list' key={realtor.id}>
         <img src={realtor.image} alt='Realtor 1' className='realtors__img' />
         <div className='realtors__details'>
           <h4 className='heading-4 heading-4--light'>{realtor.name}</h4>
