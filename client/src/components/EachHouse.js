@@ -1,4 +1,5 @@
 import React from 'react';
+import icons from '../images/sprite.svg';
 
 export default function EachHouse({ house }) {
   const { area, id, location, images, price, rooms } = house;
@@ -8,34 +9,36 @@ export default function EachHouse({ house }) {
         <img src={images[0]} alt='House 1' className='home__img' />
       </div>
 
-      {/* <svg class='home__like'>
-          <use xlink:href='image/sprite.svg#icon-heart-full'></use>
-        </svg> */}
+      <svg class='home__like'>
+        <use href={`${icons}#icon-heart-full`} />
+      </svg>
+
       <h5 className='home__name'>Beautiful Familiy House</h5>
       <div className='home__location'>
-        {/* <svg>
-            <use xlink:href='image/sprite.svg#icon-map-pin'></use>
-          </svg> */}
+        <svg>
+          <use href={`${icons}#icon-map-pin`} />
+        </svg>
         <p>{location}</p>
       </div>
       <div className='home__rooms'>
-        {/* <svg>
-            <use xlink:href='image/sprite.svg#icon-profile-male'></use>
-          </svg> */}
+        <svg>
+          <use href={`${icons}#icon-profile-male`} />
+        </svg>
         <p>{rooms} rooms</p>
       </div>
       <div className='home__area'>
-        {/* <svg>
-            <use xlink:href='image/sprite.svg#icon-expand'></use>
-          </svg> */}
+        <svg>
+          <use href={`${icons}#icon-expand`} />
+        </svg>
         <p>
           {area} m<sup>2</sup>
         </p>
       </div>
       <div className='home__price'>
-        {/* <svg>
-            <use xlinkHref={'image/sprite.svg#icon-key'}></use>
-          </svg> */}
+        <svg>
+          <use href={`${icons}#icon-key`} />
+        </svg>
+
         <p>${price}</p>
       </div>
       <button className='btn home__btn'>Contact realtor</button>
