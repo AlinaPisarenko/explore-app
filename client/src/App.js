@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Review from './components/Review';
 import Realtors from './components/Realtors';
+import Features from './components/Features';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -29,8 +30,10 @@ function App() {
       <Header />
       <Realtors realtors={realtors} />
       <Navigation />
-      <AllHouses houses={houses} />
+      <Features />
       <Review />
+      <AllHouses houses={houses} />
+
       <Gallery />
 
       <Footer />

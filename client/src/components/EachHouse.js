@@ -2,7 +2,7 @@ import React from 'react';
 import icons from '../images/sprite.svg';
 
 export default function EachHouse({ house }) {
-  const { area, id, location, images, price, rooms } = house;
+  const { area, id, location, images, price, rooms, title } = house;
   return (
     <div className='home'>
       <div className='home__img-wrapper'>
@@ -13,7 +13,7 @@ export default function EachHouse({ house }) {
         <use href={`${icons}#icon-heart-full`} />
       </svg>
 
-      <h5 className='home__name'>Beautiful Familiy House</h5>
+      <h5 className='home__name'>{title}</h5>
       <div className='home__location'>
         <svg>
           <use href={`${icons}#icon-map-pin`} />
@@ -31,7 +31,7 @@ export default function EachHouse({ house }) {
           <use href={`${icons}#icon-expand`} />
         </svg>
         <p>
-          {area} m<sup>2</sup>
+          {area} ft<sup>2</sup>
         </p>
       </div>
       <div className='home__price'>

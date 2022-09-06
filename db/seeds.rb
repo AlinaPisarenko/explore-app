@@ -5,42 +5,48 @@ Realtor.all.destroy_all
 
 #creating listings
 Listing.create(
-    location: "Austin, Texas",
+  title: 'Cozy Country House',
+    location: "Austin, TX",
     area: 2546,
     price: 570500,
     rooms: 4,
     images: ['images/house_1_1.jpeg', 'images/house_1_2.jpeg', 'images/house_1_3.jpeg']
 )
 Listing.create(
-    location: "Boulder, Colorado",
+  title: 'Beautiful Family House',
+    location: "Boulder, CO",
     area: 2713,
     price: 850000,
     rooms: 5,
     images: ['images/house_2_1.jpeg', 'images/house_2_2.jpeg', 'images/house_2_3.jpeg']
 )
 Listing.create(
-    location: "San Diego, California",
+    title: 'Large Rustical Villa',
+    location: "San Diego, CA",
     area: 2645,
     price: 1200000,
     rooms: 4,
     images: ['images/house_3_1.jpeg', 'images/house_3_2.jpeg', 'images/house_3_3.jpeg']
 )
 Listing.create(
-    location: "Breckenridge, Colorado",
+   title: 'Modern Familiy House', 
+    location: "Breckenridge, CO",
     area: 3245,
     price: 1120000,
     rooms: 4,
     images: ['images/house_4_1.jpeg', 'images/house_4_2.jpeg', 'images/house_4_3.jpeg']
 )
 Listing.create(
-    location: "Long Beach, California",
+   title: 'Modern Glass Villa',
+    location: "Long Beach, FL",
     area: 4843,
     price: 1250000,
     rooms: 5,
     images: ['images/house_5_1.jpeg', 'images/house_5_2.jpeg', 'images/house_5_3.jpeg']
 )
 Listing.create(
-    location: "Tremonton, Utah",
+     title: 'Large Modern Villa',
+    location: "Tremonton, UT",
     area: 2227,
     price: 650000,
     rooms: 3,
