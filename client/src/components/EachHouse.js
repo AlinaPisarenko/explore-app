@@ -9,9 +9,9 @@ export default function EachHouse({ house }) {
         <img src={images[0]} alt='House 1' className='home__img' />
       </div>
 
-      <svg className='home__like'>
+      {/* <svg className='home__like'>
         <use href={`${icons}#icon-heart-full`} />
-      </svg>
+      </svg> */}
 
       <h5 className='home__name'>{title}</h5>
       <div className='home__location'>

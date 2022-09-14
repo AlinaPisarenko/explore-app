@@ -14,11 +14,7 @@ export default function Footer() {
             Request proposal
           </a>
         </li>
-        <li className='nav__item'>
-          <a href='#' className='nav__link'>
-            Download home planner
-          </a>
-        </li>
+
         <li className='nav__item'>
           <a href='#' className='nav__link'>
             Contact us
