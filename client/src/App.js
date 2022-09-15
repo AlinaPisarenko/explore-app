@@ -8,19 +8,20 @@ import Review from './components/Review';
 import Realtors from './components/Realtors';
 import Features from './components/Features';
 import { useState, useEffect } from 'react';
+import { server } from '../config';
 
 function App() {
   const [houses, setHouses] = useState([]);
   const [realtors, setRealtors] = useState([]);
 
   useEffect(() => {
-    fetch('/listings')
+    fetch(`https://explore-houses-app.onrender.com/listings`)
       .then((r) => r.json())
       .then((data) => setHouses(data));
   }, []);
 
   useEffect(() => {
-    fetch('/realtors')
+    fetch('https://explore-houses-app.onrender.com/realtors')
       .then((r) => r.json())
       .then((data) => setRealtors(data));
   }, []);
