@@ -83,7 +83,7 @@ export default function Gallery() {
       <figure className='gallery__item gallery__item--12'>
         <img
           src='images/house_6_2.jpeg'
-          alt='Gallery 12'
+          alt='Gallery  12'
           className='gallery__img'
         />
       </figure>
