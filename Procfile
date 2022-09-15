@@ -1,2 +1,2 @@
 web: bundle exec rails s
-release: bin/rake db:migrate
+client: cd client && npm start
