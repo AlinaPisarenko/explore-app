@@ -175,7 +175,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.13)
   bootsnap
   debug
-  foreman (~> 0.87.2)
+  foreman
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
