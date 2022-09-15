@@ -8,7 +8,7 @@ import Review from './components/Review';
 import Realtors from './components/Realtors';
 import Features from './components/Features';
 import { useState, useEffect } from 'react';
-import { server } from '../config';
+import { server } from './config';
 
 function App() {
   const [houses, setHouses] = useState([]);
